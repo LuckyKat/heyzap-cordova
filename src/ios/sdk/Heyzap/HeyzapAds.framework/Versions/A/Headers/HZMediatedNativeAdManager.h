@@ -11,13 +11,9 @@
 
 @class HZMediatedNativeAd;
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface HZMediatedNativeAdManager : NSObject
 
-+ (void)fetchNativeAdWithOptions:(HZFetchOptions  * _Nullable)fetchOptions;
-+ (HZMediatedNativeAd * _Nullable)getNextNativeAdForTag:(NSString * _Nullable)tag error:(NSError **)error;
-
-NS_ASSUME_NONNULL_END
++ (void)fetchNativeAdWithOptions:(HZFetchOptions * __nullable)fetchOptions;
++ (HZMediatedNativeAd * __nullable)getNextNativeAdForTag:(NSString * __nullable)tag error:(NSError * __nullable * __nullable)error;
 
 @end
